@@ -21,6 +21,7 @@ class Parser:
       return True
     self.index = start_index
     return False
+      
 
   def K(self):
       # Implementa as regras K -> +TK | ε
@@ -120,7 +121,7 @@ def test_expressions(expressions, is_valid):
         print(f"Expressão {n}: '{expr}': {validity}")
         
 
-print("Testando expressões válidas:")
+print("Testando expressões válidas: ")
 test_expressions(valid_expressions, True)
 
 print("\nTestando expressões inválidas:")
